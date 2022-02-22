@@ -48,7 +48,7 @@ class AppUser(AbstractBaseUser):
     first_name = models.CharField(verbose_name='enter first name', null=False, max_length=100)
     last_name = models.CharField(verbose_name='enter last name', null=False, max_length=100)
     email = models.EmailField(verbose_name='enter last name', null= False)
-    phone_number =  models.CharField(verbose_name='enter valid phone number', null=False, max_length=20)
+    phone_number =  models.CharField(verbose_name='enter valid phone number', null=False, max_length=20, unique=True)
     cat= (
         ('Buyer','Buyer'),
         ('Seller','Seller'),

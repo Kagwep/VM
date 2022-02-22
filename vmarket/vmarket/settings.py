@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Registration',
     'Shop',
     'Product',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
